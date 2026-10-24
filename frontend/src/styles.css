@@ -1,0 +1,17 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; color: #1a1a1a; }
+header { display: flex; justify-content: space-between; align-items: center; padding: 12px 24px; background: #0b6e4f; color: #fff; }
+header a, header button { color: #fff; margin-left: 16px; background: none; border: 0; cursor: pointer; text-decoration: none; font-size: 1rem; }
+.brand { font-weight: 700; font-size: 1.2rem; margin: 0; }
+main { padding: 16px 24px; }
+.split { display: grid; grid-template-columns: 340px 1fr; gap: 16px; height: calc(100vh - 110px); }
+aside { overflow-y: auto; display: flex; flex-direction: column; gap: 8px; }
+.map { height: 100%; border-radius: 8px; }
+.card { border: 1px solid #ddd; border-radius: 8px; padding: 12px; display: flex; flex-direction: column; gap: 8px; max-width: 460px; }
+.card.active { border-color: #0b6e4f; background: #f0faf6; }
+.row { display: flex; gap: 8px; } .row > * { flex: 1; }
+input, select, button { padding: 8px; font-size: 1rem; }
+button[type=submit], .card button { background: #0b6e4f; color: #fff; border: 0; border-radius: 6px; cursor: pointer; }
+.error { color: #b00020; }
+table { border-collapse: collapse; width: 100%; } td, th { border-bottom: 1px solid #eee; padding: 8px; text-align: left; }
+@media (max-width: 800px) { .split { grid-template-columns: 1fr; height: auto; } .map { height: 360px; } }

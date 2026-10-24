@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+*.db
+node_modules/
+dist/
+.pytest_cache/
+.DS_Store
+ml/demand.csv
+ml/artifacts/*.joblib
+backend/ml_artifacts/*.joblib
+firmware/esp32_meter/config.h
+mobile/build/
+mobile/.dart_tool/
